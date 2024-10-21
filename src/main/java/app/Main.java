@@ -14,8 +14,6 @@ public class Main {
         final AppBuilder appBuilder = new AppBuilder();
         // TODO: add the Logout Use Case to the app using the appBuilder ()
         // logout use case
-        appBuilder
-                .addLogoutUseCase().build();
         final JFrame application = appBuilder
                                             .addLoginView()
                                             .addSignupView()
@@ -23,6 +21,7 @@ public class Main {
                                             .addSignupUseCase()
                                             .addLoginUseCase()
                                             .addChangePasswordUseCase()
+                                            .addLogoutUseCase()
                                             .build();
 
         application.pack();
